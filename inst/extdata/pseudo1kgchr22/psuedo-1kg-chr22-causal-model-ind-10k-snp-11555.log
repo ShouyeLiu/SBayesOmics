@@ -1,0 +1,46 @@
+PLINK v2.00a4LM 64-bit Intel (26 Apr 2023)
+Options in effect:
+  --make-bed
+  --map /scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555.map
+  --out /scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555
+  --ped /scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555.ped
+
+Hostname: bun016
+Working directory: /scratch/project_mnt/S0128/data/pseudo/bigger
+Start time: Thu Aug  1 16:46:52 2024
+
+Random number seed: 1722494812
+2051199 MiB RAM detected, ~1977281 available; reserving 1025599 MiB for main
+workspace.
+Using up to 2 compute threads.
+--pedmap: 11555 variants in .map file.
+--pedmap: 10000 samples present, genotypes extracted to
+/scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555-temporary.bed.smaj
+.
+Transposing sample-major .bed to
+/scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555-temporary.pgen
+, and setting major alleles to provisional-REF.
+Transpose complete.
+--pedmap:
+/scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555-temporary.pgen
++
+/scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555-temporary.pvar
++
+/scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555-temporary.psam
+written. .bed.smaj and .fam.tmp temporary files deleted.
+10000 samples (0 females, 0 males, 10000 ambiguous; 0 founders) loaded from
+/scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555-temporary.psam.
+11555 variants loaded from
+/scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555-temporary.pvar.
+Note: No phenotype data present.
+Writing
+/scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555.fam
+... done.
+Writing
+/scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555.bim
+... done.
+Writing
+/scratch/project_mnt/S0128/data/pseudo/bigger//psuedo-1kg-chr22-causal-model-ind-10k-snp-11555.bed
+... done.
+
+End time: Thu Aug  1 16:46:54 2024

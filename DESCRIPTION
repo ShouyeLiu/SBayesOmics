@@ -1,0 +1,36 @@
+Package: SBayesOmics
+Type: Package
+Title: clean version
+Version: 0.1.2
+Date: 2023-04-10
+Authors@R: c(
+  person("Shouye","Liu", role=c("aut","cre"), email="syliu.cn@foxmail.com")
+  )
+Maintainer: Shouye Liu <syliu.cn@foxmail.com>
+Description: SBayesOmics 
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: 
+    BEDMatrix,
+    BGData,
+    data.table,
+    dplyr,
+    EnvStats,
+    genio,
+    ggplot2,
+    MASS,
+    matrixcalc,
+    MCMCpack,
+    Rcpp,
+    tictoc,
+    tools,
+    WGCNA
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+LinkingTo: RcppEigen, BH, Rcpp
+NeedsCompilation: yes
+Packaged: 2023-07-11 10:34:27 UTC; uqsliu28
+Depends: R (>= 3.5.0)
+Author: Shouye Liu [aut, cre],
+  Jian Zeng [aut]
