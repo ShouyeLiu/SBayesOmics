@@ -3,7 +3,7 @@
 devtools::install_github("ShouyeLiu/SBayesOmics")
 ```
 
-### Generate data based on pseudo genotype
+### Generate simulated data based on pseudo genotype
 ```
 rm(list = ls())
 library(SBayesOmics)
@@ -50,3 +50,8 @@ mapLd2SnpFile <- paste0(datPathInPack,"/",snp2ldFile)
                                cauPleWithinGene = FALSE
         )
 ```
+### Citation
+
+**Note:** A manuscript describing this method is currently in preparation. A proper citation will be provided here upon publication. In the meantime, please acknowledge the use of this software in your work.
+
+For comments and questions, please contact [shouye.liu@uq.edu.au](mailto:shouye.liu@uq.edu.au).
