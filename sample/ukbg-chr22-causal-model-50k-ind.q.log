@@ -1,0 +1,32 @@
+*******************************************************************
+* Bayesian Inference on Omics Data
+* Compiled on Mar 18 2025 at 12:27:54 AEST (version v1.0.0 Mac)
+* Git Hash: unknown
+* (C) 2023-present, The University of Queensland
+* Authors: Shouye Liu and Jian Zeng
+* Please report bugs to Shouye Liu <shouye.liu@uq.edu.au>
+*******************************************************************
+Analysis started at 21:52:13 AEST on Wed Mar 19 2025
+Hostname: MOE-FVFGL060Q6LX
+
+Options:
+
+ --beqtl-summary /Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind
+ --make-query
+ --out /Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.q
+
+Seed is set as 2023.
+Reading BESD format esi file from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.esi].
+SMR BESD format is used and per snp sample size is missing.
+314 eQTLs to be included from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.esi].
+Reading BESD format epi file from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.epi].
+sample size are stored in epi file.
+10 genes to be included from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.epi].
+Reading eQTL summary data from BESD format BED file [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.besd] ...
+314 SNPs from cis-region on 1 chromosomes (ID: 22 ) are included.
+eQTL summary data of 10 Probes and 314 SNPs to be included from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.besd].
+Save eQTL data into compressed query gz format...
+10 genes and 314 cis-SNPs have been saved in the annotation file [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.q.query.gz].
+
+Analysis finished at 21:52:13 AEST on Wed Mar 19 2025
+Computational time: 0:0:0

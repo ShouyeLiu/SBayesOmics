@@ -1,0 +1,47 @@
+*******************************************************************
+* Bayesian Inference on Omics Data
+* Compiled on Mar 18 2025 at 12:27:54 AEST (version v1.0.0 Mac)
+* Git Hash: unknown
+* (C) 2023-present, The University of Queensland
+* Authors: Shouye Liu and Jian Zeng
+* Please report bugs to Shouye Liu <shouye.liu@uq.edu.au>
+*******************************************************************
+Analysis started at 21:52:13 AEST on Wed Mar 19 2025
+Hostname: MOE-FVFGL060Q6LX
+
+Options:
+
+ --bfile /Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//train-chr22-shuf-50000-sams-eur-unrel-maf01-geno01-hwe-1e-6-2022-05-18
+ --beqtl-summary /Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind
+ --extract /Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//ind/ukbg-chr22-causal-model-50k-ind.ma.snplist
+ --keep /Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//ind/ukbg-chr22-causal-model-50k-ind.indlist
+ --make-eigen-gene
+ --out /Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind
+
+Seed is set as 2023.
+Reading PLINK FAM file from [/Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//train-chr22-shuf-50000-sams-eur-unrel-maf01-geno01-hwe-1e-6-2022-05-18.fam].
+50000 individuals to be included from [/Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//train-chr22-shuf-50000-sams-eur-unrel-maf01-geno01-hwe-1e-6-2022-05-18.fam].
+Reading kept individuals with GWAS phenotype from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//ind/ukbg-chr22-causal-model-50k-ind.indlist].
+50000 matched individuals are kept in the GWAS phenotype.
+Reading PLINK BIM file from [/Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//train-chr22-shuf-50000-sams-eur-unrel-maf01-geno01-hwe-1e-6-2022-05-18.bim].
+12159 SNPs to be included from [/Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//train-chr22-shuf-50000-sams-eur-unrel-maf01-geno01-hwe-1e-6-2022-05-18.bim].
+314 SNPs on 1 chromosomes (ID: 22 ) are included.
+Reading BESD format esi file from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.esi].
+SMR BESD format is used and per snp sample size is missing.
+314 eQTLs to be included from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.esi].
+314 SNPs from cis-region on 1 chromosomes (ID: 22 ) are included.
+Reading BESD format epi file from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.epi].
+sample size are stored in epi file.
+10 genes to be included from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.epi].
+Reading eQTL summary data from BESD format BED file [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.besd] ...
+314 SNPs from cis-region on 1 chromosomes (ID: 22 ) are included.
+eQTL summary data of 10 Probes and 314 SNPs to be included from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.besd].
+10 Genes with 314 eQTLs are matched between gene eigen  LD reference and eQTL summary data.
+The proportion of variance is set as 0.9999
+Total 314 xQTLs info from 10 moleculars are written into file [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.eigen.gene.bin].
+314
+Total 314 SNPs info from gene region are written into file [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.eigen.gene.snp.info].
+Total 10 gene region info are written into file [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind.eigen.gene.info].
+
+Analysis finished at 21:52:14 AEST on Wed Mar 19 2025
+Computational time: 0:0:1

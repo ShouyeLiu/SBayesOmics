@@ -1,0 +1,39 @@
+*******************************************************************
+* Bayesian Inference on Omics Data
+* Compiled on Mar 18 2025 at 12:27:54 AEST (version v1.0.0 Mac)
+* Git Hash: unknown
+* (C) 2023-present, The University of Queensland
+* Authors: Shouye Liu and Jian Zeng
+* Please report bugs to Shouye Liu <shouye.liu@uq.edu.au>
+*******************************************************************
+Analysis started at 21:52:12 AEST on Wed Mar 19 2025
+Hostname: MOE-FVFGL060Q6LX
+
+Options:
+
+ --bfile /Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//train-chr22-shuf-50000-sams-eur-unrel-maf01-geno01-hwe-1e-6-2022-05-18
+ --extract /Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//ind/ukbg-chr22-causal-model-50k-ind.ma.snplist
+ --keep /Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//ind/ukbg-chr22-causal-model-50k-ind.indlist
+ --make-eigen
+ --block-info /Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//param-ref4cM_v37.pos
+ --out /Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind-eigen
+
+Seed is set as 2023.
+Reading PLINK FAM file from [/Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//train-chr22-shuf-50000-sams-eur-unrel-maf01-geno01-hwe-1e-6-2022-05-18.fam].
+50000 individuals to be included from [/Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//train-chr22-shuf-50000-sams-eur-unrel-maf01-geno01-hwe-1e-6-2022-05-18.fam].
+Reading kept individuals with GWAS phenotype from [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//ind/ukbg-chr22-causal-model-50k-ind.indlist].
+50000 matched individuals are kept in the GWAS phenotype.
+Reading PLINK BIM file from [/Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//train-chr22-shuf-50000-sams-eur-unrel-maf01-geno01-hwe-1e-6-2022-05-18.bim].
+12159 SNPs to be included from [/Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//train-chr22-shuf-50000-sams-eur-unrel-maf01-geno01-hwe-1e-6-2022-05-18.bim].
+Reading ld block info from file [/Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//param-ref4cM_v37.pos].
+591 GWAS LD Blocks to be included from [/Users/uqsliu28/Documents/personal/R/SBayesOmics/inst/extdata/ukbchr22//param-ref4cM_v37.pos].
+314 SNPs on 1 chromosomes (ID: 22 ) are included.
+7 GWAS LD block(s) have been mapped to SNP data.
+The proportion of variance is set as 0.9999
+ Generate and save eigen of LD matrix from GWAS LD block region 1/7 Generate and save eigen of LD matrix from GWAS LD block region 2/7 Generate and save eigen of LD matrix from GWAS LD block region 4/7 Generate and save eigen of LD matrix from GWAS LD block region 6/7 Generate and save eigen of LD matrix from GWAS LD block region 7/7Total 314 SNPs info from 7 LD Blocks are written into file [0x1f07d5160].
+0
+Total 314 SNPs info from ldblock region are written into file [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind-eigen.eigen.ldblock.snp.info].
+Total 314 ldblock region info are written into file [/Users/uqsliu28/Documents/personal/SbayesAnno/downSampling/Verify0319//summary/ukbg-chr22-causal-model-50k-ind-eigen.eigen.ldblock.info].
+
+Analysis finished at 21:52:13 AEST on Wed Mar 19 2025
+Computational time: 0:0:1
