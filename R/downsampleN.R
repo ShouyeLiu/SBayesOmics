@@ -31,15 +31,25 @@ downsampleN = function(geneSummaryFile,geneLDFile,targetN){
     ld = Ugene[[genei]] %*% diag(lambdaGene[[genei]]) %*% t(Ugene[[genei]])
     diag(ld) = diag(ld) + 0.2
     ## original sample size
-    n_trn = targetN
-    pseudoXqtl = xqtlEff + sqrt(1/n_trn - 1/mean(xqtlEff$N)) * Ugene[[genei]] %*% diag(sqrt(lambdaGene[[genei]])) %*% rnorm(length(lambdaGene[[genei]]),0,1)
-    pseudoXqtl = pseudoXqtl[,1]
-    seR = sqrt(N/n_trn) * xqtlSE
-    sePse = sqrt((1 - pseudoXqtl* pseudoXqtl))/sqrt(n_trn)
-    sqtlP10K <- data.table(GeneID = genei,SNPID = xqtlsnp,
-                           betaPse = pseudoXqtl, sePse = sePse,
-                           betaR = xqtlEff,seR = seR,
-                           N = n_trn)
+    sqtlP10K = xqtlg %>%
+      mutate(GeneID = genei, xqtlEff = BETA * sqrt(snp2pq), xqtlSE = SE * sqrt(snp2pq), n_trn = targetN) %>%
+      mutate( betaPse = as.numeric(xqtlEff + sqrt(1/n_trn - 1/N) * Ugene[[genei]] %*% diag(sqrt(lambdaGene[[genei]])) %*% rnorm(length(lambdaGene[[genei]]),0,1) ),
+              sePse = sqrt((1 - betaPse* betaPse))/sqrt(n_trn),
+              betaR = xqtlEff,
+              seR = sqrt(N/n_trn) * xqtlSE,
+              NOri = N,
+              N = n_trn
+      ) %>%
+      select(GeneID,SNPID,betaPse,sePse,betaR,seR,N,NOri)
+
+    # pseudoXqtl = xqtlEff + sqrt(1/n_trn - 1/N) * Ugene[[genei]] %*% diag(sqrt(lambdaGene[[genei]])) %*% rnorm(length(lambdaGene[[genei]]),0,1)
+    # pseudoXqtl = pseudoXqtl[,1]
+    # seR = sqrt(N/n_trn) * xqtlSE
+    # sePse = sqrt((1 - pseudoXqtl* pseudoXqtl))/sqrt(n_trn)
+    # sqtlP10K <- data.table(GeneID = genei,SNPID = xqtlsnp,
+    #                        betaPse = pseudoXqtl, sePse = sePse,
+    #                        betaR = xqtlEff,seR = seR,
+    #                        N = n_trn)
     qtlP10K = rbind(qtlP10K,sqtlP10K)
   }
   return(qtlP10K)
