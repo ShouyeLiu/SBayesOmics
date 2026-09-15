@@ -173,10 +173,10 @@ assumed for every fresh simulator call.
 | `h2snp` | Target total SNP heritability for the continuous GWAS trait. |
 | `h2med` | Mediated component setting; subject to the component-specific rules above. |
 | `ldwBool` | Select blockwise LD handling when LD calculation is enabled. |
-| `outPath` | Optional directory for the generator's RDS output. The example saves an explicitly named object instead. |
-| `smrPath` | Optional output root for the generator's individual and summary text exports; an empty string disables these exports. |
+| `outPath` | Retained in the function signature; the public simulator does not write RDS files. Save the returned object explicitly with `saveRDS()`. |
+| `smrPath`, `smrIndGenePath`, `smrIndFileSuffix` | Retained arguments; the public simulator does not export downstream input files. |
 
-Advanced overlap and export switches remain implementation-specific. Inspect
+Advanced overlap switches remain implementation-specific. Inspect
 `formals()` and the simulation source before changing them; the example does
 not depend on their experimental combinations.
 
@@ -241,8 +241,8 @@ conversion. The relevant input families are:
 | LD reference | Block definitions and matching block/molecular LD, with SNP order and allele orientation. |
 | Truth and provenance | Original effects, realized variances, genotype scales, seeds and input/version checksums. |
 
-The simulator's optional text exports and the current C++ input contracts should
-be checked explicitly, including headers and relative phenotype paths. Writing
+Downstream exporters must be implemented separately and checked against the C++
+input contracts, including headers and relative phenotype paths. Writing
 an RDS file is not itself a completed C++ input export. See the
 [BayesOmics documentation](https://shouyeliu.github.io/softwares/content-softwares.html)
 for the downstream data-management workflow.
