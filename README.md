@@ -254,9 +254,7 @@ For the associated SBayesCO-EIEO study, see
 [*Joint Bayesian modelling of molecular QTL and GWAS effects improves polygenic
 prediction for complex traits*](https://www.medrxiv.org/content/10.64898/2026.03.10.26347908v1),
 medRxiv preprint, 2026, DOI: **10.64898/2026.03.10.26347908**.
-Please also record the SBayesOmics version or source revision used to generate
-your simulation. The citation does not establish validation of every simulation
-option or development extension.
+
 
 Questions and bug reports: [GitHub Issues](https://github.com/ShouyeLiu/SBayesOmics/issues).
 Maintainer: Shouye Liu, [shouye.liu@uq.edu.au](mailto:shouye.liu@uq.edu.au).
