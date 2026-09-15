@@ -8,11 +8,6 @@ GWAS and molecular QTL summary statistics, and genetic-effect truth from
 specified genotype and gene–SNP configurations. Saving these together makes it
 possible to evaluate downstream software against the same simulated dataset.
 
-This README documents the simulation workflow under development. Examples use
-1KG or pseudo genotypes. The simulation interface and data distribution are
-being finalized; this release candidate and the current GitHub release
-are not yet interchangeable. Downstream model fitting belongs to the BayesOmics
-workflow and is outside the scope of this guide.
 
 ## Simulation workflow
 
@@ -26,7 +21,6 @@ flowchart LR
     D --> G[Saved simulation benchmark]
     E --> G
     F --> G
-    G --> H[BayesOmics input preparation and validation]
 ```
 
 The diagram describes the data flow, not measured performance.
@@ -176,9 +170,6 @@ assumed for every fresh simulator call.
 | `outPath` | Retained in the function signature; the public simulator does not write RDS files. Save the returned object explicitly with `saveRDS()`. |
 | `smrPath`, `smrIndGenePath`, `smrIndFileSuffix` | Retained arguments; the public simulator does not export downstream input files. |
 
-Advanced overlap switches remain implementation-specific. Inspect
-`formals()` and the simulation source before changing them; the example does
-not depend on their experimental combinations.
 
 ## Returned data and simulation truth
 
