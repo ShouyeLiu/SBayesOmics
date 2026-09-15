@@ -1,0 +1,15 @@
+^codex$
+^\.git$
+^\.gitignore$
+^\.gitattributes$
+^AGENTS\.md$
+^simulation$
+^inst/scripts$
+^SBayesOmics\.Rproj$
+^\.Rproj\.user$
+^\.Rhistory$
+^\.RData$
+^\.Ruserdata$
+^SBayesOmics_.*\.tar\.gz$
+^.*\.Rcheck$
+^tests/simulation-four-cases\.R$

@@ -1,0 +1,5 @@
+/codex export-ignore
+/AGENTS.md export-ignore
+/.gitignore export-ignore
+/.gitattributes export-ignore
+/tests/simulation-four-cases.R export-ignore

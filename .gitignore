@@ -1,4 +1,11 @@
+/codex/
+/simulation/
+/inst/scripts/
+/SBayesOmics.Rproj
+/.Rproj.user/
+.Rhistory
+.RData
 .DS_Store
-.Rbuildignore
-.Rproj.user
-SBayesOmics.Rproj
+/*.Rcheck/
+/SBayesOmics_*.tar.gz
+/tests/simulation-four-cases.R
